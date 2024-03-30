@@ -3,7 +3,10 @@
 // import Three from './Three.jsx'
 // import Four from './Four.jsx'
 // import Six from './Six.jsx'
-import Seven from './Seven'
+// import Seven from './Seven'
+// import Eight from './Eight'
+// import Nine from './Nine'
+import Ten from './Ten'
 
 import './App.css'
 
@@ -17,7 +20,10 @@ function App() {
       <Four /> */}
       {/* <Five /> */}
       {/* <Six /> */}
-      <Seven />
+      {/* <Seven /> */}
+      {/* <Eight /> */}
+      {/* <Nine /> */}
+      <Ten />
     </div>
   )
 }

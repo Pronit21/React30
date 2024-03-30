@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
 function Eight() {
-    const [backgroundColor, setBackgroundColor] = useState('white');
+    const [backgroundColor, setBackgroundColor] = useState('yellow');
     const handleClick = ()=>{
-        const newColor = backgroundColor === 'white' ? 'blue' : 'white';
+        const newColor = backgroundColor === 'yellow' ? 'blue' : 'white';
         setBackgroundColor(newColor)
     }
   return (
