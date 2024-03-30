@@ -2,7 +2,8 @@
 // import Two from './Two.jsx'
 // import Three from './Three.jsx'
 // import Four from './Four.jsx'
-import Six from './Six.jsx'
+// import Six from './Six.jsx'
+import Seven from './Seven'
 
 import './App.css'
 
@@ -15,7 +16,8 @@ function App() {
       <Three />
       <Four /> */}
       {/* <Five /> */}
-      <Six />
+      {/* <Six /> */}
+      <Seven />
     </div>
   )
 }
