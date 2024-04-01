@@ -7,11 +7,14 @@
 // import Eight from './Eight'
 // import Nine from './Nine'
 // import Ten from './Ten'
-import Eleven from './Eleven'
+// import Eleven from './Eleven'
+// import Twelve from './Twelve'
+import Thirteen from './Thirteen'
 
 import './App.css'
 
 function App() {
+  const items = ['Item 1', 'Item 2', 'Item 3', 'Another Item', 'Another Item 2'];
   
   return (
     <div>
@@ -25,7 +28,9 @@ function App() {
       {/* <Eight /> */}
       {/* <Nine /> */}
       {/* <Ten /> */}
-      <Eleven />
+      {/* <Eleven /> */}
+      {/* <Twelve /> */}
+      <Thirteen items={items} />
     </div>
   )
 }
