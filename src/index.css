@@ -1,16 +1,3 @@
-.nav-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: #333; /* Change color as needed */
-  margin-right: 20px; /* Adjust spacing between links */
-}
-
-.nav-link:hover {
-  color: #007bff; /* Change color on hover */
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

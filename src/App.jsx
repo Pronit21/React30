@@ -6,7 +6,8 @@
 // import Seven from './Seven'
 // import Eight from './Eight'
 // import Nine from './Nine'
-import Ten from './Ten'
+// import Ten from './Ten'
+import Eleven from './Eleven'
 
 import './App.css'
 
@@ -23,7 +24,8 @@ function App() {
       {/* <Seven /> */}
       {/* <Eight /> */}
       {/* <Nine /> */}
-      <Ten />
+      {/* <Ten /> */}
+      <Eleven />
     </div>
   )
 }
