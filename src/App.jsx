@@ -9,7 +9,8 @@
 // import Ten from './Ten'
 // import Eleven from './Eleven'
 // import Twelve from './Twelve'
-import Thirteen from './Thirteen'
+// import Thirteen from './Thirteen'
+import Fourteen from './Fourteen';
 
 import './App.css'
 
@@ -30,9 +31,10 @@ function App() {
       {/* <Ten /> */}
       {/* <Eleven /> */}
       {/* <Twelve /> */}
-      <Thirteen items={items} />
+      {/* <Thirteen items={items} /> */}
+      <Fourteen />
     </div>
   )
 }
 
-export default App
+export default App;
