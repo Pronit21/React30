@@ -1,7 +1,7 @@
 // import One from './One.jsx'
 // import Two from './Two.jsx'
 // import Three from './Three.jsx'
-// import Four from './Four.jsx'
+import Four from './Four.jsx'
 // import Six from './Six.jsx'
 // import Seven from './Seven'
 // import Eight from './Eight'
@@ -12,7 +12,8 @@
 // import Thirteen from './Thirteen'
 // import Fourteen from './Fourteen';
 // import Fifteen from './Fifteen';
-import Sixteen from './Sixteen';
+// import Sixteen from './Sixteen';
+// import Seventeen from './Seventeen';
 
 import './App.css'
 
@@ -21,10 +22,10 @@ function App() {
   
   return (
     <div>
-      {/* <One />
-      <Two />
-      <Three />
-      <Four /> */}
+      {/* <One /> */}
+      {/* {/* <Two /> */}
+      {/* <Three /> */}
+      <Four /> 
       {/* <Five /> */}
       {/* <Six /> */}
       {/* <Seven /> */}
@@ -37,7 +38,8 @@ function App() {
 {/* 
       <Fourteen /> */}
       {/* <Fifteen /> */}
-      <Sixteen />
+      {/* <Sixteen /> */}
+      {/* <Seventeen /> */}
       
     </div>
   )

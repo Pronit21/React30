@@ -1,11 +1,22 @@
-function Four() {
-    const items = ['Item1', 'Item2', 'Item3', 'Item4']
+import {useState, useEffect} from 'react'
+
+const Four = () => {
+  const [color, setColor] = useState('yellow');
+
+  useEffect(() => {
+    document.body.style.backgroundColor = color;
+}, [color]);
+
+function generateColor() {
+    const randomColor =  '#' + Math.floor(Math.random()*16777215).toString(16);
+    setColor(randomColor);
+}
+
   return (
-    <ul>
-        {items.map((item,index)=>{
-            return <li key={index}>{item}</li>
-        })}
-    </ul>
+    <div id="button">
+      <button onClick={generateColor}>ZAP!!</button>
+      
+    </div>
   )
 }
 

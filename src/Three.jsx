@@ -1,14 +1,20 @@
-import { useState } from "react";
+import {useState} from "react";
+import Cookie from "./assets/cookie.png";
+import "./App.css";
 
 function Three() {
-    const [input, setInput] = useState('');
+    const [click, setClick] = useState(0);
 
-    return (
-        <div>
-            <input type='text' value={input} onChange={(e) => setInput(e.target.value)} />
-            <p>User input: {input}</p>
-        </div>
-    );
+    const increment = () => {
+        setClick(click + 1);
+    }
+    
+  return (
+    <div id="cookie">
+        <p>{click} Cookie</p>
+        <img src={Cookie} alt="cookie" onClick={increment} />
+    </div>
+  )
 }
 
 export default Three;
