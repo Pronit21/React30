@@ -1,20 +1,23 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react'
 
 function Seven() {
-    const [time, setTime] = useState(60);
+  const [message, setMessage] = useState('');
 
-    useEffect(()=>{
-        if(time>0){
-            const timer = setTimeout(()=> setTime(time-1), 1000);
-            return ()=> clearTimeout(timer);            
-        }
+    useEffect(() => {
+      const timer = setTimeout(()=>{
+        setMessage('Hello World');
+      }, 3000);
 
-    },[time])
-  return (
-    <div>
-        Time Left: {time} second
-    </div>
-  )
-}
+      return () => {
+        clearTimeout(timer);
+      };
+    }, []);
 
-export default Seven
+    return (
+      <div>
+        <h1 className="text-3xl font-bold bg-slate-400">Message: {message}</h1>
+      </div>
+    )
+  }
+
+export default Seven;

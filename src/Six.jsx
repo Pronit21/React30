@@ -1,28 +1,31 @@
-import { useState, useEffect }  from 'react'
+//Use effect helps us to fetch APIs, Creating timers, DOM manipulation
+import {useState, useEffect} from 'react'
 
 
 function Six() {
-    const [data, setData] = useState(null);
+    const [users, setUsers] = useState([]);
 
     useEffect(()=>{
-        fetch('https://jsonplaceholder.org/posts/1')
-        .then((response)=>response.json())
-        .then((json)=>setData(json))
+        const fetchData = async ()=>{
+            const response = await fetch('https://reqres.in/api/users?page=2');
+            const data = await response.json();
+            setUsers(data);
+        };
 
-    })
-  return (
-    <div>
-        {
-            data? (
-                <div>
-                    <h1>Title: {data.title}</h1>
-                    </div>
-
+        fetchData();
+    }, []);
+    
+    return (
+        <ul>
+            {users.length === 0 ? (
+                <li>Loading...</li>
             ) : (
-                <p>Loading....</p>
-        )}
-    </div>
-  )
+                users.map((user)=>{
+                    return <li key={user.id}>{user.name}</li>
+                })
+            )}
+        </ul>
+    )
 }
 
-export default Six
+export default Six;

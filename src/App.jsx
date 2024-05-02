@@ -1,19 +1,21 @@
 // import One from './One.jsx'
 // import Two from './Two.jsx'
 // import Three from './Three.jsx'
-import Four from './Four.jsx'
-// import Six from './Six.jsx'
-// import Seven from './Seven'
+// import Four from './Four.jsx'
+import Six from './Six.jsx';
+// import Seven from './Seven';
 // import Eight from './Eight'
 // import Nine from './Nine'
 // import Ten from './Ten'
 // import Eleven from './Eleven'
-// import Twelve from './Twelve'
+// import Twelve from './Twelve';
 // import Thirteen from './Thirteen'
 // import Fourteen from './Fourteen';
 // import Fifteen from './Fifteen';
 // import Sixteen from './Sixteen';
 // import Seventeen from './Seventeen';
+// import Eighteen from './Eighteen';
+// import Nineteen from './Nineteen';
 
 import './App.css'
 
@@ -25,9 +27,9 @@ function App() {
       {/* <One /> */}
       {/* {/* <Two /> */}
       {/* <Three /> */}
-      <Four /> 
+      {/* <Four />  */}
       {/* <Five /> */}
-      {/* <Six /> */}
+      <Six />
       {/* <Seven /> */}
       {/* <Eight /> */}
       {/* <Nine /> */}
@@ -36,10 +38,12 @@ function App() {
       {/* <Twelve /> */}
       {/* <Thirteen items={items} /> */}
 {/* 
-      <Fourteen /> */}
+      <Fourteen />  */}
       {/* <Fifteen /> */}
       {/* <Sixteen /> */}
       {/* <Seventeen /> */}
+      {/* <Eighteen /> */}
+      {/* <Nineteen /> */}
       
     </div>
   )

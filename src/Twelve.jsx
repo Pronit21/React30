@@ -1,56 +1,30 @@
-import { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 function Twelve() {
-    const [weather, setWeather] = useState(null);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const [toggle, setToggle] = useState(false);
 
     useEffect(() => {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                (position) => {
-                    const { latitude, longitude } = position.coords;
+        // Code to run on component mount
+        const intervalId = setInterval(function(){
+            if (toggle) {
+                const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                document.body.style.backgroundColor = randomColor;
+            }
+        }, 1000);
 
-                    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=0f21d12ed60a3cd6a67007e05acef0af`)
-                        .then((response) => {
-                            if (!response.ok) {
-                                throw new Error('Failed to fetch weather data');
-                            }
-                            return response.json();
-                        })
-                        .then((data) => {
-                            setWeather(data);
-                            setLoading(false);
-                        })
-                        .catch((error) => {
-                            setError(error.message);
-                            setLoading(false);
-                        });
-                },
-                (error) => {
-                    setError(error.message);
-                    setLoading(false);
-                }
-            );
-        } else {
-            setError('Geolocation is not supported by your browser');
-            setLoading(false);
-        }
-    }, []);
+        return () => {
+            // Code to run on component unmount
+            clearInterval(intervalId)
+        };
+    }, [toggle]);
+
+    const handleToggle=()=>{
+        setToggle(prevToggle => !prevToggle);
+    };
 
     return (
-        <div>
-            {loading ? (
-                <p>Loading...</p>
-            ) : error ? (
-                <p>Error: {error}</p>
-            ) : weather ? (
-                <div>
-                    <h2>Current Weather</h2>
-                    <p>Temperature: {weather.main.temp}</p>
-                    <p>Conditions: {weather.weather[0].description}</p>
-                </div>
-            ) : null}
+        <div id="toggle">
+            <button onClick={handleToggle}>{toggle ? "Stop": "Start"} Color Changing</button>
         </div>
     );
 }
