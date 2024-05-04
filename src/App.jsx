@@ -2,7 +2,7 @@
 // import Two from './Two.jsx'
 // import Three from './Three.jsx'
 // import Four from './Four.jsx'
-import Six from './Six.jsx';
+// import Six from './Six.jsx';
 // import Seven from './Seven';
 // import Eight from './Eight'
 // import Nine from './Nine'
@@ -16,6 +16,7 @@ import Six from './Six.jsx';
 // import Seventeen from './Seventeen';
 // import Eighteen from './Eighteen';
 // import Nineteen from './Nineteen';
+import Twenty from './Twenty';
 
 import './App.css'
 
@@ -29,7 +30,7 @@ function App() {
       {/* <Three /> */}
       {/* <Four />  */}
       {/* <Five /> */}
-      <Six />
+      {/* <Six /> */}
       {/* <Seven /> */}
       {/* <Eight /> */}
       {/* <Nine /> */}
@@ -44,6 +45,7 @@ function App() {
       {/* <Seventeen /> */}
       {/* <Eighteen /> */}
       {/* <Nineteen /> */}
+      <Twenty />
       
     </div>
   )

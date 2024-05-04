@@ -20,7 +20,7 @@ export default function Haiku() {
         return <p key={index}>{line}</p>
       });
     }
-  };
+  }
 
   return (
     <div className="container">

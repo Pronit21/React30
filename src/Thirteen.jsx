@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Thirteen({ items }) {
+function Thirteen({ filter }) {
     const [searchTerm, setSearchTerm] = useState('');
 
     const filteredItems = items.filter((item) =>

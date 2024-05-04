@@ -14,8 +14,8 @@ function Fourteen() {
     });
   };
 
-  const handleSubmit = () => {
-    // e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
     alert(`Hello ${formData.name}`);
     setFormData({ name: '', email: '', message: '' });
   };
