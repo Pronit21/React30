@@ -16,7 +16,8 @@
 // import Seventeen from './Seventeen';
 // import Eighteen from './Eighteen';
 // import Nineteen from './Nineteen';
-import Twenty from './Twenty';
+// import Twenty from './Twenty';
+import TwentyOne from './TwentyOne';
 
 import './App.css'
 
@@ -45,7 +46,8 @@ function App() {
       {/* <Seventeen /> */}
       {/* <Eighteen /> */}
       {/* <Nineteen /> */}
-      <Twenty />
+      {/* <Twenty /> */}
+      <TwentyOne />
       
     </div>
   )
