@@ -17,9 +17,11 @@
 // import Eighteen from './Eighteen';
 // import Nineteen from './Nineteen';
 // import Twenty from './Twenty';
-import TwentyOne from './TwentyOne';
+// import TwentyOne from './TwentyOne';
+import TwentyTwo from './TwentyTwo';
 
 import './App.css'
+import { AuthProvider } from './AuthContext';
 
 function App() {
   // const items = ['Item 1', 'Item 2', 'Item 3', 'Another Item', 'Another Item 2']
@@ -47,7 +49,10 @@ function App() {
       {/* <Eighteen /> */}
       {/* <Nineteen /> */}
       {/* <Twenty /> */}
-      <TwentyOne />
+      {/* <TwentyOne /> */}
+      <AuthProvider>
+      <TwentyTwo />
+      </AuthProvider>
       
     </div>
   )
