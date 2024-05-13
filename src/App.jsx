@@ -20,7 +20,9 @@
 // import TwentyOne from './TwentyOne';
 // import TwentyTwo from './TwentyTwo';
 // import TwentyThree from './TwentyThree';
-import TwentyFour from './TwentyFour';
+// import TwentyFour from './TwentyFour';
+// import TwentyFive from './TwentyFive';
+import SignUpForm from './SignUpForm';
 
 import './App.css'
 // import { AuthProvider } from './AuthContext';
@@ -56,8 +58,9 @@ function App() {
       <TwentyTwo />
       </AuthProvider> */}
       {/* <TwentyThree /> */}
-      <TwentyFour />
-      
+      {/* <TwentyFour /> */}
+      {/* <TwentyFive />       */}
+      <SignUpForm />
     </div>
   )
 }
