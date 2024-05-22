@@ -2,6 +2,7 @@
 // import Two from './Two.jsx'
 // import Three from './Three.jsx'
 // import Four from './Four.jsx'
+import Five from './Five';
 // import Six from './Six.jsx';
 // import Seven from './Seven';
 // import Eight from './Eight'
@@ -22,7 +23,7 @@
 // import TwentyThree from './TwentyThree';
 // import TwentyFour from './TwentyFour';
 // import TwentyFive from './TwentyFive';
-import SignUpForm from './SignUpForm';
+// import SignUpForm from './SignUpForm';
 
 import './App.css'
 // import { AuthProvider } from './AuthContext';
@@ -36,7 +37,7 @@ function App() {
       {/* {/* <Two /> */}
       {/* <Three /> */}
       {/* <Four />  */}
-      {/* <Five /> */}
+      <Five />
       {/* <Six /> */}
       {/* <Seven /> */}
       {/* <Eight /> */}
@@ -60,7 +61,7 @@ function App() {
       {/* <TwentyThree /> */}
       {/* <TwentyFour /> */}
       {/* <TwentyFive />       */}
-      <SignUpForm />
+      {/* <SignUpForm /> */}
     </div>
   )
 }

@@ -1,20 +1,37 @@
-import { useState } from 'react';
-
 function Five() {
+  function handleFocus(e) {
+    e.target.style.backgroundColor = "lightblue";
+  }
 
-    const [isToggled, setIsToggled] = useState(false);
+  function handleBlur(e) {
+    e.target.style.backgroundColor = " ";
+  }
 
-    const handleToggle=()=>{
-        setIsToggled(!isToggled);
+  function handleKeyDown(e){
+    if (e.key === "H" || e.key === "h"){
+      e.target.style.backgroundColor="red"
+    } else {
+      e.target.style.backgroundColor = " ";
     }
+  }
+
+  function handleKeyUp(e) {
+      e.target.style.backgroundColor = "";
+    
+  }
   return (
     <div>
-        <label>
-            <input type='checkbox' onChange={handleToggle} />
-        </label>
-        <p>{isToggled ? " On " : " Off "}</p>
+      <label htmlFor='name'>Name: </label>
+      <input
+        type="text"
+        id="name"
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+        onKeyDown={handleKeyDown}
+        onKeyUp={handleKeyUp}
+      />
     </div>
   )
 }
 
-export default Five
+export default Five;
