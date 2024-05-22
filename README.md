@@ -12,16 +12,16 @@ Easy Setup: Get started quickly with simple setup instructions for each project.
 How to Use
 Clone the Repository: Clone this repository to your local machine using git clone.<br>
 ```yaml
-git clone https://github.com/Pronit21/React30.git<br>
+git clone https://github.com/Pronit21/React30.git
 ```
 
-Install Dependencies: Install the required dependencies using npm . <br>
+Install Dependencies: Install the required dependencies using npm . 
 ```yaml
 npm install <br>
 ```
 Start the Development Server: Run the project locally to view it in your browser. <br>
 ```yaml
-npm start <br>
+npm start 
 ```
 Explore and Learn: Explore the project, modify the code, and experiment with different React concepts. Have fun coding! <br>
 
