@@ -11,7 +11,9 @@ Code Snippets: Dive into well-organized code snippets that demonstrate React bes
 Easy Setup: Get started quickly with simple setup instructions for each project. No complex configurations required!<br>
 How to Use
 Clone the Repository: Clone this repository to your local machine using git clone.<br>
+```yaml
 git clone https://github.com/Pronit21/React30.git<br>
+```yaml
 
 Install Dependencies: Install the required dependencies using npm . <br>
 npm install <br>
