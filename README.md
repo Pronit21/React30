@@ -17,7 +17,7 @@ git clone https://github.com/Pronit21/React30.git
 
 Install Dependencies: Install the required dependencies using npm . 
 ```yaml
-npm install <br>
+npm install 
 ```
 Start the Development Server: Run the project locally to view it in your browser. <br>
 ```yaml
